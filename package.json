@@ -1,0 +1,25 @@
+{
+  "name": "s1-affiliate-bot",
+  "version": "1.0.0",
+  "description": "AI Multi-Platform Affiliate Bot MVP",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "db:init": "psql $DATABASE_URL -f src/db/schema.sql"
+  },
+  "dependencies": {
+    "grammy": "^1.21.1",
+    "fastify": "^4.26.1",
+    "@fastify/cors": "^9.0.1",
+    "pg": "^8.11.3",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.11.5",
+    "@types/pg": "^8.10.9"
+  }
+}
